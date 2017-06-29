@@ -28,7 +28,7 @@ var Iron_color = "#AF78C9";
 //====================================================================
 $(document).ready(function() {
 
-  d3.tsv("donnees.tsv", function(data) {
+  d3.tsv("data.tsv", function(data) {
     data.forEach(function(d) {
       d.Longitude = +d.Longitude;
       d.Latitude = +d.Latitude;
