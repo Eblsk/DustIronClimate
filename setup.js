@@ -47,7 +47,7 @@ $(document).ready(function() {
 
     new L.graticule({ interval: 10, style: { color: '#333', weight: 0.5, opacity: 1. } }).addTo(theMap);
     new L.Control.MousePosition({lngFirst: true}).addTo(theMap);
-    new L.Control.zoomHome({homeZoom: 2, homeCoordinates: [45, 0]}).addTo(theMap);
+    new L.Control.zoomHome({homeZoom: 1, homeCoordinates: [-60, 0]}).addTo(theMap);
 
     mapmadeUrl = 'http://services.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer/tile/{z}/{y}/{x}',
     mapmade = new L.TileLayer(mapmadeUrl, { maxZoom: mapMaxZoom+1});
@@ -452,8 +452,7 @@ function initCrossfilter(data) {
   .dimension(tableDim)
   .group(function(d) {})
   .showGroups(false)
-  .size(100)
-    //.size(xf.size()) //display all data
+  .size(xf.size()) //display all data
     .columns([
       function(d) { return d.Id; },
       function(d) { return format1(d.Depth); },
