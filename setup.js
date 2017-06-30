@@ -47,7 +47,7 @@ $(document).ready(function() {
 
     new L.graticule({ interval: 10, style: { color: '#333', weight: 0.5, opacity: 1. } }).addTo(theMap);
     new L.Control.MousePosition({lngFirst: true}).addTo(theMap);
-    new L.Control.zoomHome({homeZoom: 2, homeCoordinates: [45, 0]}).addTo(theMap);
+    new L.Control.zoomHome({homeZoom: 1, homeCoordinates: [-60, 0]}).addTo(theMap);
 
     mapmadeUrl = 'http://services.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer/tile/{z}/{y}/{x}',
     mapmade = new L.TileLayer(mapmadeUrl, { maxZoom: mapMaxZoom+1});
