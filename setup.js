@@ -45,7 +45,6 @@ $(document).ready(function() {
 
     theMap = mapChart.map();
 
-    new L.graticule({ interval: 10, style: { color: '#333', weight: 0.5, opacity: 1. } }).addTo(theMap);
     new L.Control.MousePosition({lngFirst: true}).addTo(theMap);
     new L.Control.zoomHome({homeZoom: 1, homeCoordinates: [-60, 0]}).addTo(theMap);
 
