@@ -261,7 +261,7 @@ function initCrossfilter(data) {
       .tiles(function(map) {			// overwrite default baselayer
         return L.tileLayer(
           'http://services.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer/tile/{z}/{y}/{x}',
-          { attribution: 'LSCE &copy; 2016 | Baselayer &copy; ArcGis' }).addTo(map); 
+          { attribution: 'LSCE &copy; 2017 | Baselayer &copy; ArcGis' }).addTo(map); 
       })
       .mapOptions({maxZoom: mapMaxZoom, zoomControl: false})
       .fitOnRender(false)
@@ -363,8 +363,8 @@ function initCrossfilter(data) {
   .margins({top: 10, right: 20, bottom: 30, left: 40})	
   .dimension(ageDim)
   .group(ageGroup)
-  .xAxisLabel("Most recent age")
-  .yAxisLabel("Oldest age")
+  .xAxisLabel("Oldest age")
+  .yAxisLabel("Most recent age")
     //.mouseZoomable(true)
     .x(d3.scale.linear().domain(age1Range))
     .y(d3.scale.linear().domain(age2Range))
