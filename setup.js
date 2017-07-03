@@ -45,7 +45,6 @@ $(document).ready(function() {
 
     theMap = mapChart.map();
 
-    new L.graticule({ interval: 10, style: { color: '#333', weight: 0.5, opacity: 1. } }).addTo(theMap);
     new L.Control.MousePosition({lngFirst: true}).addTo(theMap);
     new L.Control.zoomHome({homeZoom: 1, homeCoordinates: [-60, 0]}).addTo(theMap);
 
@@ -262,7 +261,7 @@ function initCrossfilter(data) {
       .tiles(function(map) {			// overwrite default baselayer
         return L.tileLayer(
           'http://services.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer/tile/{z}/{y}/{x}',
-          { attribution: 'LSCE &copy; 2016 | Baselayer &copy; ArcGis' }).addTo(map); 
+          { attribution: 'LSCE &copy; 2017 | Baselayer &copy; ArcGis' }).addTo(map); 
       })
       .mapOptions({maxZoom: mapMaxZoom, zoomControl: false})
       .fitOnRender(false)
@@ -364,8 +363,8 @@ function initCrossfilter(data) {
   .margins({top: 10, right: 20, bottom: 30, left: 40})	
   .dimension(ageDim)
   .group(ageGroup)
-  .xAxisLabel("Most recent age")
-  .yAxisLabel("Oldest age")
+  .xAxisLabel("Oldest age")
+  .yAxisLabel("Most recent age")
     //.mouseZoomable(true)
     .x(d3.scale.linear().domain(age1Range))
     .y(d3.scale.linear().domain(age2Range))
