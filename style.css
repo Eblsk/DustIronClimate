@@ -118,16 +118,18 @@
 #chart-table .th_Id , #chart-table .dc-table-column._0 { width: 40px;  text-align: right; padding-right: 5px; }
 #chart-table .th_Dep, #chart-table .dc-table-column._1 { width: 50px; text-align: right; }
 #chart-table .th_Mos, #chart-table .dc-table-column._2 { width: 100px; text-align: right; padding-left: 10px; }
-#chart-table .th_Old, #chart-table .dc-table-column._3 { width: 100px; text-align: right; }
-#chart-table .th_Arc, #chart-table .dc-table-column._4 { width: 180px; text-align: left; padding-left: 30px; }
-#chart-table .th_Dat, #chart-table .dc-table-column._5 { width: 140px; text-align: left; }
-#chart-table .th_DOI, #chart-table .dc-table-column._6 { width: 210px; text-align: left; }
+#chart-table .th_Old, #chart-table .dc-table-column._3 { width: 80px; text-align: right; }
+#chart-table .th_Arc, #chart-table .dc-table-column._4 { width: 100px; text-align: left; padding-left: 30px; }
+#chart-table .th_Dat, #chart-table .dc-table-column._5 { width: 120px; text-align: left; }
+#chart-table .th_ODOI, #chart-table .dc-table-column._6 { width: 140px; text-align: left; }
 /* scrollbar width = 17px; total width set at 1200px */
-#chart-table .th_Ref, #chart-table .dc-table-column._7 { width: 313px; text-align: left; }
+#chart-table .th_ORef, #chart-table .dc-table-column._7 { width: 180px; text-align: left; }
+#chart-table .th_DDOI, #chart-table .dc-table-column._8 { width: 140px; text-align: left; }
+#chart-table .th_DRef, #chart-table .dc-table-column._9 { width: 183px; text-align: left; }
 #chart-table .th_Sel { width: 50px; text-align: left; }
-#chart-table .dc-table-column._8 { width: 50px; text-align: center; }
+#chart-table .dc-table-column._10 { width: 50px; text-align: center; }
 
-#chart-table .dc-table-column._6, #chart-table .dc-table-column._7 {
+#chart-table .dc-table-column._4, #chart-table .dc-table-column._6, #chart-table .dc-table-column._7, #chart-table .dc-table-column._8, #chart-table .dc-table-column._9{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
