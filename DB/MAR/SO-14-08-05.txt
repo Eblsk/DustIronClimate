@@ -1,6 +1,0 @@
-"Age (ka BP)"	"Dust MAR (g/m2/a)"	"Age error (ka)"	"DMAR error (g/m2/a)"	"Depth top (cm)"	"Depth bottom (cm)"	"Depth center (cm)"	"Age top (ka BP)"	"Age bottom (ka BP)"	"Age center (ka BP)"	"SBMAR (g/m2/a)"	"SBMAR rel err"	"SDBD (g/cm3)"	"SDBD rel err"	"SR (cm/ka)"	"SR rel err"	"EC (fraction)"	"EC (ppm)"	"EC rel err"
-2.68	0.21	0.2	0.02	0	2	1	NA	NA	2.68	16.528	0.103	0.75	0.05	2.204	0.075	0.013	NA	0.05
-5.03	0.84	0.38	0.1	5	7	6	NA	NA	5.03	17.537	0.103	0.81	0.05	2.165	0.076	0.048	NA	0.05
-7.3	1.01	0.04	0.09	10	12	11	NA	NA	7.3	17.631	0.071	0.79	0.05	2.232	0.005	0.057	NA	0.05
-9.51	1.69	0.2	0.15	15	17	16	NA	NA	9.51	18.179	0.074	0.8	0.05	2.272	0.021	0.093	NA	0.05
-11.7	0.81	0.25	0.07	20	22	21	NA	NA	11.7	18.729	0.074	0.82	0.05	2.284	0.021	0.043	NA	0.05
