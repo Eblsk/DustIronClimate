@@ -69,7 +69,7 @@ $(document).ready(function() {
     // Make DOI a hyperlink to google scholar and handle selection
     $('#chart-table').on('click', '.dc-table-column', function() {
       column = d3.select(this).attr("class");
-      if (column == "dc-table-column _8") {
+      if (column == "dc-table-column _10") {
         id = d3.select(this.parentNode).select(".dc-table-column._0").text();
         data[id-1].Selected = d3.select(this).select('input').property('checked');
       } else {
@@ -459,8 +459,10 @@ function initCrossfilter(data) {
       function(d) { return format2(d.OldestDate); },
       function(d) { return d.Archive; },
       function(d) { return d.DataType; },
-      function(d) { return '<a href="https://scholar.google.fr/scholar?q=' + d.DOI + '" target="_blank">' + d.DOI + '</a>' },
-      function(d) { return d.Reference; },
+      function(d) { return '<a href="https://scholar.google.fr/scholar?q=' + d.OriginalDataDOI + '" target="_blank">' + d.OriginalDataDOI + '</a>' },
+      function(d) { return d.OriginalDataReference; },
+      function(d) { return '<a href="https://scholar.google.fr/scholar?q=' + d.DatabaseDOI + '" target="_blank">' + d.DatabaseDOI + '</a>' },
+      function(d) { return d.DatabaseReference; },
       function(d) { if (d.Selected) return "<input type='checkbox' checked>";
       else return "<input type='checkbox'>"; }
       ])
